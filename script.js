@@ -1,6 +1,6 @@
-function iniciarTemporizador(id) {
+function iniciarTemporizador(id, tiempoInicial = 0) {
     var temporizador = document.getElementById(id);
-    var tiempo = 0;
+    var tiempo = tiempoInicial;
     setInterval(function() {
         tiempo++;
         var horas = Math.floor(tiempo / 3600);
@@ -13,5 +13,5 @@ function iniciarTemporizador(id) {
     }, 1000);
 }
 
-iniciarTemporizador("temporizador1");
-iniciarTemporizador("temporizador2");
+// Iniciar el temporizador en 10 segundos
+iniciarTemporizador("temporizador", 10);
