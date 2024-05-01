@@ -1,1 +1,15 @@
-asdf
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporizadores</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="temporizador" id="temporizador1">00:00:00</div>
+    <div class="temporizador" id="temporizador2">00:00:00</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
