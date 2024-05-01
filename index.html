@@ -3,13 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temporizador</title>
+    <title>Temporizadores</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <input type="number" id="duracion" placeholder="Duración en minutos">
-    <button onclick="iniciarTemporizador()">Iniciar Temporizador</button>
-    <div class="temporizador" id="temporizador">00:00:00</div>
+    <div class="columna">
+        <h2>Columna 1</h2>
+        <div class="temporizadores">
+            <input type="number" class="duracion" placeholder="Duración en minutos">
+            <button onclick="iniciarTemporizador()">Iniciar Temporizador</button>
+            <div class="temporizador">00:00:00</div>
+            <!-- Repite estos elementos para los temporizadores adicionales -->
+        </div>
+    </div>
+
+    <div class="columna">
+        <h2>Columna 2</h2>
+        <div class="temporizadores">
+            <input type="number" class="duracion" placeholder="Duración en minutos">
+            <button onclick="iniciarTemporizador()">Iniciar Temporizador</button>
+            <div class="temporizador">00:00:00</div>
+            <!-- Repite estos elementos para los temporizadores adicionales -->
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
