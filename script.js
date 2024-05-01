@@ -10,7 +10,7 @@ function iniciarTemporizador() {
     var temporizador = document.getElementById("temporizador");
     var tiempo = duracion;
 
-    setInterval(function() {
+    var intervalo = setInterval(function() {
         var horas = Math.floor(tiempo / 3600);
         var minutos = Math.floor((tiempo % 3600) / 60);
         var segundos = tiempo % 60;
@@ -20,7 +20,7 @@ function iniciarTemporizador() {
             (segundos < 10 ? "0" : "") + segundos;
 
         if (tiempo === 0) {
-            clearInterval();
+            clearInterval(intervalo); // Detener el temporizador cuando llegue a cero
             alert("¡Tiempo terminado!");
         } else {
             tiempo--;
